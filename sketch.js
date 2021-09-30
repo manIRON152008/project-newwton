@@ -12,11 +12,14 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	bob = new Bob(100,100,20);
-	bob2 = new Bob(300,100,20)
-	roof = new Roof(200,200,80,20)
+	bob = new Bob(170,100,20);
+	bob2 = new Bob(175,100,20);
+	bob3 = new Bob(180,100,20);
+	bob4 = new Bob(185,100,20);
+	bob5 = new Bob(190,100,20);
+	roof = new Roof(220,200,300,20)
 
-
+    rope = new Rope(bob.body,roof.body)
 
 	Engine.run(engine);
   
@@ -29,7 +32,11 @@ function draw() {
   
 bob.display();
 bob2.display();
+bob3.display();
+bob4.display();
+bob5.display();
 roof.display();
+rope.display();
  
 }
 
